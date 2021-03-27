@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<h1>
- <a href="{% url 'learning_logs:index' %}">Learning Log</a>
-</h1>
-{% block content %}{% endblock content %}
-</body>
-</html>
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
+  </p>
+  {% block content %}{% endblock content %}
